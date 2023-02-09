@@ -7,6 +7,7 @@ import {
   ListContainer,
   ListItem,
   ListItemLeftContainer,
+  ListItemPointedLine,
   ListName,
   ListOptions,
   ListOptionsIcons,
@@ -21,14 +22,15 @@ export default () => {
       <ListBox>
         <ListItem>
           <ListName>Name</ListName>
+          <ListItemPointedLine/>
           <ListItemLeftContainer>
             <ListAge>Age</ListAge>
             <ListOptions>
                 <ListOptionsIcons>
-                    <img src={"logo192.png"} width={'100%'}/>
+                    <img src={"wrench.svg"} width={'100%'}/>
                 </ListOptionsIcons>
                 <ListOptionsIcons>
-                    <img src={"logo192.png"} width={'100%'}/>
+                    <img src={"trash.svg"} width={'100%'}/>
                 </ListOptionsIcons>
             </ListOptions>
           </ListItemLeftContainer>

@@ -61,13 +61,15 @@ export const ListItemLeftContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     font-size: 25px;
-    width: 10%;
+    width: 50%;
 `
 
 export const ListAge = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 3vw;
     border-right: 1px solid black;
     margin-right: 0.5vw;
     font-size: 25px;
@@ -77,6 +79,8 @@ export const ListAge = styled.div`
 export const ListOptions = styled.div`
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    padding-left: 3vw;
     justify-content: space-between;
     width: 50%;
 `
@@ -85,4 +89,10 @@ export const ListOptionsIcons = styled.div`
     display: flex;
     align-items: center;
     width: 45%;
+`
+
+export const ListItemPointedLine = styled.div`
+    width: 100%;
+    background-size: contain;
+    background-repeat: space;
 `
