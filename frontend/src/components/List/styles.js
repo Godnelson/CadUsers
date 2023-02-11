@@ -61,7 +61,7 @@ export const ListItemLeftContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     font-size: 25px;
-    width: 50%;
+    width: 25%;
 `
 
 export const ListAge = styled.div`
@@ -92,7 +92,7 @@ export const ListOptionsIcons = styled.div`
 `
 
 export const ListItemPointedLine = styled.div`
-    width: 100%;
-    background-size: contain;
-    background-repeat: space;
+    width: 50vw;
+    height: 1px;
+    border-bottom: 2px dashed black;
 `

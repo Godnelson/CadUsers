@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   AddButton,
   ButtonContainer,
@@ -27,10 +27,10 @@ export default () => {
             <ListAge>Age</ListAge>
             <ListOptions>
                 <ListOptionsIcons>
-                    <img src={"wrench.svg"} width={'100%'}/>
+                    <img src={"wrench.svg"} width={'25vw'}/>
                 </ListOptionsIcons>
-                <ListOptionsIcons>
-                    <img src={"trash.svg"} width={'100%'}/>
+                <ListOptionsIcons style={{marginLeft: '2vh'}}>
+                    <img src={"trash.svg"} width={'25vw'}/>
                 </ListOptionsIcons>
             </ListOptions>
           </ListItemLeftContainer>
