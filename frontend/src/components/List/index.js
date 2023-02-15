@@ -14,27 +14,32 @@ import {
 } from "./styles";
 
 export default () => {
+  const data = [{ name: "Luiz", age: 20 }, { name: "Gui Mala", age: 19 }, { name: "Julia", age: 22 }];
   return (
     <ListContainer>
       <ButtonContainer>
         <AddButton>+</AddButton>
       </ButtonContainer>
       <ListBox>
-        <ListItem>
-          <ListName>Name</ListName>
-          <ListItemPointedLine/>
-          <ListItemLeftContainer>
-            <ListAge>Age</ListAge>
-            <ListOptions>
-                <ListOptionsIcons>
-                    <img src={"wrench.svg"} width={'25vw'}/>
-                </ListOptionsIcons>
-                <ListOptionsIcons style={{marginLeft: '2vh'}}>
-                    <img src={"trash.svg"} width={'25vw'}/>
-                </ListOptionsIcons>
-            </ListOptions>
-          </ListItemLeftContainer>
-        </ListItem>
+        {data.map((e) => {
+          return (
+            <ListItem>
+              <ListName>{e.name}</ListName>
+              <ListItemPointedLine />
+              <ListItemLeftContainer>
+                <ListAge>{e.age}</ListAge>
+                <ListOptions>
+                  <ListOptionsIcons>
+                    <img src={"wrench.svg"} width={"25vw"} />
+                  </ListOptionsIcons>
+                  <ListOptionsIcons style={{ marginLeft: "2vh" }}>
+                    <img src={"trash.svg"} width={"25vw"} />
+                  </ListOptionsIcons>
+                </ListOptions>
+              </ListItemLeftContainer>
+            </ListItem>
+          );
+        })}
       </ListBox>
     </ListContainer>
   );

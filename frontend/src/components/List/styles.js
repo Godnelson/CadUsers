@@ -34,6 +34,7 @@ export const ListBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 8vh;
     box-sizing: border-box;
@@ -43,6 +44,7 @@ export const ListBox = styled.div`
 
 export const ListItem = styled.div`
     display: flex;
+    margin-top: 3vh;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -60,7 +62,6 @@ export const ListItemLeftContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 25px;
     width: 25%;
 `
 
