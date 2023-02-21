@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from "../Modal";
 import {
   AddButton,
   ButtonContainer,
@@ -15,10 +16,14 @@ import {
 
 export default () => {
   const data = [{ name: "Luiz", age: 20 }, { name: "Gui Mala", age: 19 }, { name: "Julia", age: 22 }];
+  const [modalInsert, useModalInsert] = useState(true)
+
   return (
     <ListContainer>
       <ButtonContainer>
-        <AddButton>+</AddButton>
+        <AddButton onClick={()=>{
+          useModalInsert(true)
+        }}>+</AddButton>
       </ButtonContainer>
       <ListBox>
         {data.map((e) => {
@@ -41,6 +46,7 @@ export default () => {
           );
         })}
       </ListBox>
+      <Modal visible = {modalInsert}/>
     </ListContainer>
   );
 };
